@@ -16,6 +16,9 @@ export {
   type AddSessionKeyOptions,
   addSessionKey,
   isAddSessionKeySupported,
+  setPermissionsForSigner,
+  signPermissionRequest,
+  toContractPermissions
 } from "../../extensions/erc4337/account/addSessionKey.js";
 
 export {

@@ -51,6 +51,9 @@ export type AddSessionKeyOptions = {
  * ```
  * @extension ERC4337
  */
+
+export { setPermissionsForSigner, signPermissionRequest, toContractPermissions };
+
 export function addSessionKey(
   options: BaseTransactionOptions<AddSessionKeyOptions>,
 ) {
@@ -66,7 +69,7 @@ export function addSessionKey(
           permissions,
         }),
       });
-      return { signature, req };
+      return { req, signature,  };
     },
   });
 }
